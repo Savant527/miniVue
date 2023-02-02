@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hola mundo!</title>
+</head>
+<body>
+<div id="app">
+<span p-text="message"></span>
+<br />
+<span p-text="otro"></span>
+<br />
+<input type="text" p-model="message" />
+<br />
+<input type="text" p-model="message" />
+<br />
+<img p-bind="src:image">
+</div>
+<script src="platzi.js"></script>
+<script>
+      const { createApp } = Platzi;
+
+      const app = createApp({
+        data() {
+          return {
+            message: "Hola Platzi!",
+            otro: "hola minivue"
+          };
+        }
+      });
+      app.mount();
+    </script>
+</body>
+</html>
